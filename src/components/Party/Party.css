@@ -1,0 +1,70 @@
+.party__button_saved {
+  color: #B9B9B9;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: inherit;
+  margin-left: 15px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.party__button_saved::before {
+  content: '';
+  position: absolute;
+  background-image: url(../../assets/complete.svg);
+  width: 18px;
+  height: 18px;
+  top: 20%;
+  left: -15px;
+  background-size: cover;
+  
+}
+
+.party__info_title {
+  color: #2b2829;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 45px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.info__container {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.party__title {
+  color: #2b2829;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.party__text {
+  color: #2b2829;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.info_general {
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 24px;
+}
+
+.party__button {
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f50634;
+  padding: 10px;
+  cursor: pointer;
+}

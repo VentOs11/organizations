@@ -1,0 +1,15 @@
+.party__list {
+  list-style: none;
+  width: 100%;
+}
+
+.party__list_item {
+  border: 1px solid #dfdfdf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+

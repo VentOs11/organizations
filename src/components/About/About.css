@@ -1,0 +1,18 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+}
+
+.about__icon {
+  height: 68px;
+  width: 68px;
+}
+
+.about__text {
+  width: 300px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #777777;
+}

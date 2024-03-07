@@ -1,0 +1,57 @@
+.item__title {
+    font-size: 18px;
+    line-height: 33px;
+    color: #2b2829;
+    font-weight: bold;
+  }
+  
+  .item__info_gen {
+    font-size: 12px;
+    line-height: 22px;
+    color: #777777;
+    margin-bottom: 5px;
+  }
+  
+  .item__info_ext {
+    font-size: 12px;
+    line-height: 22px;
+    color: #2b2829 !important;
+  }
+  
+  .item__buttons {
+    padding: 0;
+  }
+  
+  .item__remove-button {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 1;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .item__acc-button {
+    width: 110px;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    text-align: right;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 10px;
+    line-height: 18px;
+    color: #777777;
+    text-decoration: underline;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
