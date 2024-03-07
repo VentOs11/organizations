@@ -18,6 +18,7 @@ export default function PartyItem ({removeParty, item}) {
               <p className='item__info_gen'>
                 ИНН <span className='item__info_ext'>{item.values.inn}</span>
               </p>
+	          {/* Нет смысла через css это скрывать. Просто рендерить только при isShow   */}
               <div className={isShow ? 'show' : 'hide'}>
                 <p className='item__info_gen'>
                   КПП <span className='item__info_ext'>{item.values.kpp}</span>
@@ -44,11 +45,13 @@ export default function PartyItem ({removeParty, item}) {
               >
                 <img src={removeIcon} alt='removeIcon' />
               </button>
+	          {/*  В чем смысл еще одну функцию создавать в onClick? */}
               <button
                 className='item__acc-button'
                 onClick={() => showInformation()}
               >
                 {!isShow ? 'подробнее ' : 'скрыть подробности '}
+	              {/*  Иконки, которые используются для оформления, нужно внутри css описывать */}
                 {!isShow ? (
                   <img src={arrowDown} alt='arrow down' />
                 ) : (

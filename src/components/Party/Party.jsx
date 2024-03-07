@@ -19,6 +19,11 @@ export function Party({ partyItem, ...props }) {
           <p className='party__title'>Генеральный директор</p>
           <p className='party__text'>{props.name}</p>
         </div>
+	      {/*
+		  Не правильно так списки верстать.
+		  Во-первых, лучше использовать <ul> для этого. Во-вторых, порядок текста не правильный
+		  название и значение должны быть вместе, в одном блоке. Из-за этого еще и верстка едет, если выбрать ИП из списка
+	  */}
         <div className='info_general'>
           <div className='general-s'>
             <p>ИНН</p>

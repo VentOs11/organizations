@@ -15,13 +15,16 @@ const api = 'e98e3ef631336c732b056663319ce4e8ff902aca';
 export default function App() {
   let partySuggestionId = useId();
   let [suggestData, setSuggestData] = useState();
+  // Название переменной неудачное. Гораздо понятнее было бы "partyItems"
   let [partyItem, setPartyItem] = useState(() => {
     const savedData = localStorage.getItem('partyItem');
     const initialValue = JSON.parse(savedData);
     return initialValue || [];
   });
 
+  // Лучше эту логику перенести в компонент Party
   function nameOfType() {
+	  // Зачем вообще тут нужна переменная name?
     let name;
     if (
       suggestData.data.management === null ||
@@ -40,6 +43,8 @@ export default function App() {
   }
 
   function handleAddParty(values) {
+	  // Когда для установки стейта используется предыдущее значение, надежнее использовать колбек.
+	  // setPartyItem((prevValue) => ...)
     setPartyItem([...partyItem, { values }]);
   }
 
@@ -57,6 +62,7 @@ export default function App() {
       <div className='container'>
         <h1 className='title'>Мои организации</h1>
         <div className='App'>
+	      {/* Для табов можно было и не использовать npm пакет. */}
           <Tabs className='Tabs'>
             <TabList>
               <Tab>Новая организация</Tab>
@@ -85,6 +91,7 @@ export default function App() {
                   />
                 </form>
                 {suggestData ? (
+					// Проще было сделать один пропс для suggestData
                   <Party
                     partyItem={partyItem}
                     id={suggestData.data.hid}
